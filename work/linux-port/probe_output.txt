@@ -1,0 +1,183 @@
+     ____
+    / _  |   Frida 17.24.3 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+Attaching...
+===== PROBE START =====
+target: com.google.android.vending.licensing.*
+
+### CLASS FOUND: com.google.android.vending.licensing.a
+  superclass: class java.lang.Object
+  methods (2):
+    public java.lang.String com.google.android.vending.licensing.a.a(java.lang.String,java.lang.String)
+    public java.lang.String com.google.android.vending.licensing.a.b(java.lang.String,java.lang.String)
+  fields (3):
+    private javax.crypto.Cipher com.google.android.vending.licensing.a.b
+    private javax.crypto.Cipher com.google.android.vending.licensing.a.c
+    private static final byte[] com.google.android.vending.licensing.a.a
+
+### CLASS FOUND: com.google.android.vending.licensing.b
+  superclass: class java.lang.Object
+  methods (16):
+    private void com.google.android.vending.licensing.b.a(long)
+    private void com.google.android.vending.licensing.b.a(java.lang.String)
+    private void com.google.android.vending.licensing.b.b(java.lang.String)
+    private void com.google.android.vending.licensing.b.c(java.lang.String)
+    private java.util.Map com.google.android.vending.licensing.b.d(java.lang.String)
+    private void com.google.android.vending.licensing.b.d(int)
+    public java.lang.String com.google.android.vending.licensing.b.a(int)
+    public void com.google.android.vending.licensing.b.a()
+    public void com.google.android.vending.licensing.b.a(int,long)
+    public void com.google.android.vending.licensing.b.a(int,com.google.android.vending.licensing.l)
+    public void com.google.android.vending.licensing.b.a(int,java.lang.String)
+    public int com.google.android.vending.licensing.b.b()
+    public java.lang.String com.google.android.vending.licensing.b.b(int)
+    public void com.google.android.vending.licensing.b.b(int,java.lang.String)
+    public long com.google.android.vending.licensing.b.c(int)
+    public boolean com.google.android.vending.licensing.b.c()
+  fields (10):
+    private long com.google.android.vending.licensing.b.a
+    private long com.google.android.vending.licensing.b.b
+    private long com.google.android.vending.licensing.b.c
+    private long com.google.android.vending.licensing.b.d
+    private long com.google.android.vending.licensing.b.e
+    private int com.google.android.vending.licensing.b.f
+    private com.google.android.vending.licensing.k com.google.android.vending.licensing.b.g
+    private java.util.Vector com.google.android.vending.licensing.b.h
+    private java.util.Vector com.google.android.vending.licensing.b.i
+    private java.util.Vector com.google.android.vending.licensing.b.j
+
+### CLASS FOUND: com.google.android.vending.licensing.c
+  superclass: null
+  methods (1):
+    public abstract int com.google.android.vending.licensing.c.a(java.lang.String)
+  fields (0):
+
+### CLASS FOUND: com.google.android.vending.licensing.d
+  superclass: null
+  methods (1):
+    public abstract void com.google.android.vending.licensing.d.a(int,java.lang.String,java.lang.String)
+  fields (0):
+  nested (1):
+    com.google.android.vending.licensing.d$a
+
+### CLASS FOUND: com.google.android.vending.licensing.e
+  superclass: class java.lang.Object
+  methods (15):
+    private static java.lang.String com.google.android.vending.licensing.e.a(android.content.Context,java.lang.String)
+    private static java.security.PublicKey com.google.android.vending.licensing.e.a(java.lang.String)
+    static java.util.Set com.google.android.vending.licensing.e.a(com.google.android.vending.licensing.e)
+    private void com.google.android.vending.licensing.e.a()
+    static void com.google.android.vending.licensing.e.a(com.google.android.vending.licensing.e,com.google.android.vending.licensing.g)
+    private synchronized void com.google.android.vending.licensing.e.a(com.google.android.vending.licensing.g)
+    static java.security.PublicKey com.google.android.vending.licensing.e.b(com.google.android.vending.licensing.e)
+    private void com.google.android.vending.licensing.e.b()
+    static void com.google.android.vending.licensing.e.b(com.google.android.vending.licensing.e,com.google.android.vending.licensing.g)
+    private synchronized void com.google.android.vending.licensing.e.b(com.google.android.vending.licensing.g)
+    private int com.google.android.vending.licensing.e.c()
+    static android.os.Handler com.google.android.vending.licensing.e.c(com.google.android.vending.licensing.e)
+    public synchronized void com.google.android.vending.licensing.e.a(com.google.android.vending.licensing.f)
+    public synchronized void com.google.android.vending.licensing.e.onServiceConnected(android.content.ComponentName,android.os.IBinder)
+    public synchronized void com.google.android.vending.licensing.e.onServiceDisconnected(android.content.ComponentName)
+  fields (10):
+    private com.google.android.vending.licensing.ILicensingService com.google.android.vending.licensing.e.b
+    private java.security.PublicKey com.google.android.vending.licensing.e.c
+    private final android.content.Context com.google.android.vending.licensing.e.d
+    private final com.google.android.vending.licensing.j com.google.android.vending.licensing.e.e
+    private android.os.Handler com.google.android.vending.licensing.e.f
+    private final java.lang.String com.google.android.vending.licensing.e.g
+    private final java.lang.String com.google.android.vending.licensing.e.h
+    private final java.util.Set com.google.android.vending.licensing.e.i
+    private final java.util.Queue com.google.android.vending.licensing.e.j
+    private static final java.security.SecureRandom com.google.android.vending.licensing.e.a
+  nested (1):
+    com.google.android.vending.licensing.e$a
+
+### CLASS FOUND: com.google.android.vending.licensing.f
+  superclass: null
+  methods (3):
+    public abstract void com.google.android.vending.licensing.f.a(int)
+    public abstract void com.google.android.vending.licensing.f.b(int)
+    public abstract void com.google.android.vending.licensing.f.c(int)
+  fields (0):
+
+### CLASS FOUND: com.google.android.vending.licensing.g
+  superclass: class java.lang.Object
+  methods (7):
+    private void com.google.android.vending.licensing.g.a(int)
+    private void com.google.android.vending.licensing.g.a(int,com.google.android.vending.licensing.l)
+    private void com.google.android.vending.licensing.g.d()
+    public com.google.android.vending.licensing.f com.google.android.vending.licensing.g.a()
+    public void com.google.android.vending.licensing.g.a(java.security.PublicKey,int,java.lang.String,java.lang.String)
+    public int com.google.android.vending.licensing.g.b()
+    public java.lang.String com.google.android.vending.licensing.g.c()
+  fields (6):
+    private final com.google.android.vending.licensing.j com.google.android.vending.licensing.g.a
+    private final com.google.android.vending.licensing.f com.google.android.vending.licensing.g.b
+    private final int com.google.android.vending.licensing.g.c
+    private final java.lang.String com.google.android.vending.licensing.g.d
+    private final java.lang.String com.google.android.vending.licensing.g.e
+    private final com.google.android.vending.licensing.c com.google.android.vending.licensing.g.f
+
+### CLASS FOUND: com.google.android.vending.licensing.h
+  superclass: class java.lang.Object
+  methods (1):
+    public int com.google.android.vending.licensing.h.a(java.lang.String)
+  fields (0):
+
+### CLASS FOUND: com.google.android.vending.licensing.i
+  superclass: null
+  methods (2):
+    public abstract java.lang.String com.google.android.vending.licensing.i.a(java.lang.String,java.lang.String)
+    public abstract java.lang.String com.google.android.vending.licensing.i.b(java.lang.String,java.lang.String)
+  fields (0):
+
+### CLASS FOUND: com.google.android.vending.licensing.j
+  superclass: null
+  methods (2):
+    public abstract void com.google.android.vending.licensing.j.a(int,com.google.android.vending.licensing.l)
+    public abstract boolean com.google.android.vending.licensing.j.c()
+  fields (0):
+
+### CLASS FOUND: com.google.android.vending.licensing.k
+  superclass: class java.lang.Object
+  methods (3):
+    public void com.google.android.vending.licensing.k.a()
+    public void com.google.android.vending.licensing.k.a(java.lang.String,java.lang.String)
+    public java.lang.String com.google.android.vending.licensing.k.b(java.lang.String,java.lang.String)
+  fields (3):
+    private final android.content.SharedPreferences com.google.android.vending.licensing.k.a
+    private final com.google.android.vending.licensing.i com.google.android.vending.licensing.k.b
+    private android.content.SharedPreferences$Editor com.google.android.vending.licensing.k.c
+
+### CLASS FOUND: com.google.android.vending.licensing.l
+  superclass: class java.lang.Object
+  methods (2):
+    public static com.google.android.vending.licensing.l com.google.android.vending.licensing.l.a(java.lang.String)
+    public java.lang.String com.google.android.vending.licensing.l.toString()
+  fields (7):
+    public int com.google.android.vending.licensing.l.a
+    public int com.google.android.vending.licensing.l.b
+    public java.lang.String com.google.android.vending.licensing.l.c
+    public java.lang.String com.google.android.vending.licensing.l.d
+    public java.lang.String com.google.android.vending.licensing.l.e
+    public long com.google.android.vending.licensing.l.f
+    public java.lang.String com.google.android.vending.licensing.l.g
+
+### CLASS FOUND: com.google.android.vending.licensing.m
+  superclass: class java.lang.Exception
+  methods (0):
+  fields (0):
+### AIDL ABSENT: com.android.vending.licensing.ILicensingService (Error: java.lang.ClassNotFoundException: Didn't find class "com.android.vending.licensing.ILicensingService" on path: DexPathList[[zip file "/data/app/~~HU6TB2eT6XeaPTHAZNxnuw==/jp.konami.castlevania-DCJnWQSRfMwAEiIqi0ObBQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~HU6TB2eT6XeaPTHAZNxnuw==/jp.konami.castlevania-DCJnWQSRfMwAEiIqi0ObBQ==/lib/arm64, /data/app/~~HU6TB2eT6XeaPTHAZNxnuw==/jp.konami.castlevania-DCJnWQSRfMwAEiIqi0ObBQ==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]])
+### AIDL ABSENT: com.android.vending.licensing.ILicenseResultListener (Error: java.lang.ClassNotFoundException: Didn't find class "com.android.vending.licensing.ILicenseResultListener" on path: DexPathList[[zip file "/data/app/~~HU6TB2eT6XeaPTHAZNxnuw==/jp.konami.castlevania-DCJnWQSRfMwAEiIqi0ObBQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~HU6TB2eT6XeaPTHAZNxnuw==/jp.konami.castlevania-DCJnWQSRfMwAEiIqi0ObBQ==/lib/arm64, /data/app/~~HU6TB2eT6XeaPTHAZNxnuw==/jp.konami.castlevania-DCJnWQSRfMwAEiIqi0ObBQ==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]])
+
+===== PROBE END =====
+[Android Emulator 5554::PID::9700 ]-> 

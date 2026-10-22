@@ -1,0 +1,18 @@
+# AES project management (excluded per request)
+.aes/
+aes/
+
+# APK (large binary, not for git)
+*.apk
+
+# Python caches
+__pycache__/
+.pytest_cache/
+
+# Extracted game content (proprietary, not for git)
+extracted/
+work/sharedassets0.assets
+
+# OS files
+.DS_Store
+Thumbs.db
